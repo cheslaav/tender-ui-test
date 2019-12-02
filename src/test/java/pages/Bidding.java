@@ -76,7 +76,8 @@ public class Bidding {
         $(By.className("name")).click();
         $("textarea.form-control").setValue("avtotest");
         //Добавляю шаблон
-        $("div.sort-item:nth-child(9) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > span:nth-child(1)").click();
+        //$("div.sort-item:nth-child(9) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > span:nth-child(1)").click();
+        $(".placeholder").click();
         $$(By.className("result")).first().click();
         //сохраняю ID процедуры
         String realID = $(".workspace > div:nth-child(1) > div:nth-child(1) > h4:nth-child(1)").getText();
