@@ -34,6 +34,7 @@ public class RunTest {
         WebDriverManager.chromedriver().setup();
         ChromeOptions option = new ChromeOptions();
         option.addArguments("--no-sandbox");
+        option.setHeadless(true);
         option.addArguments("--start-maximized");
         DesiredCapabilities chrome = DesiredCapabilities.chrome();
         chrome.setJavascriptEnabled(true);

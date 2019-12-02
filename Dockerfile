@@ -1,6 +1,6 @@
-FROM cheslaav/maven-jdk11-chrome:latest
+FROM markhobson/maven-chrome
 
-COPY ./ /project
-WORKDIR /project
+COPY ./ /test-ui
+WORKDIR /test-ui
 
-CMD mvn clean install
+CMD mvn clean test
